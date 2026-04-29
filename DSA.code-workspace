@@ -1,0 +1,35 @@
+{
+  "folders": [
+	{
+		"name": "DSA",
+		"path": "../../DSA"
+	},
+	{
+		"name": "HackWithInfy2025",
+		"path": "../../HackWithInfy2025"
+	},
+	{
+		"name": "Full stack web d",
+		"path": "D:/Coding purpose/Full stack web d"
+	},
+	{
+		"path": "../../BridgeLabz-SIPP-Training"
+	},
+	{
+		"path": "../../CodeVita"
+	},
+	{
+		"path": "../../realtime_emotion_project_full"
+	},
+	{
+		"path": ".."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Demo",
+    "files.associations": {
+      "*.html": "html",
+      "random": "cpp"
+    }
+  }
+}
