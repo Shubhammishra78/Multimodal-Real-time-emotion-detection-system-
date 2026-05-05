@@ -1,0 +1,7 @@
+flask
+flask-socketio
+python-socketio
+opencv-python
+tensorflow==2.12.0
+eventlet
+numpy

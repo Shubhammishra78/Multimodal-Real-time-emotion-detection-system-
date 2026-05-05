@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multimodal Real-Time Emotion Detection System</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+
+<header class="hero">
+  <h1>Multimodal Real-Time Emotion Detection System</h1>
+  <p>Detect human emotions using Face, Text & Voice in real-time</p>
+  <a href="#camera" class="hero-btn">Go To Advanced AI Model ↓</a>
+</header>
+
+
+<section class="about">
+  <h2>What is it ???</h2>
+  <p>
+    This is an advanced Multimodal AI Emotion Detection System that analyzes human emotions using multiple input sources including facial expressions (image/video), text, and voice/audio. The system leverages Deep Learning, Computer Vision, and Natural Language Processing (NLP) to understand user sentiment in real time as well as from uploaded data.
+
+It supports live camera detection, real-time voice recording, and file-based inputs such as images, audio files, and text documents, making it a complete end-to-end intelligent emotion analysis platform.
+
+By combining outputs from different modalities, the system provides more accurate and reliable emotion predictions, identifying emotional states such as Happy, Sad, Angry, Fearful, Neutral, and more.
+
+This project demonstrates how AI can be applied in real-world applications like customer feedback analysis, mental health monitoring, human-computer interaction, and smart user experience systems.
+  </p>
+</section>
+
+
+<section id="camera" class="camera-section">
+  <h2>Face Emotion Detection</h2>
+
+  <div class="video-container">
+    <video id="video" autoplay playsinline></video>
+    <canvas id="overlay"></canvas>
+  </div>
+
+  <div class="controls">
+    <button id="startBtn">Start Camera</button>
+    <button id="stopBtn">Stop Camera</button>
+    <p id="status"></p>
+  </div>
+</section>
+
+
+<section class="text-section">
+  <h2>Text Emotion Detection</h2>
+  <p>Type a sentence to detect emotion automatically</p>
+
+  <input
+    type="text"
+    id="textInput"
+    placeholder="Type something like: I am feeling very happy today..."
+  />
+
+  <p id="textResult"></p>
+</section>
+
+
+<section class="voice-section">
+  <h2>Voice Emotion Detection</h2>
+  <p>Click and speak for 4 seconds</p>
+
+  <button id="recordBtn">🎤 Start Recording</button>
+
+  <canvas id="waveform" width="400" height="80"></canvas>
+
+  <div class="voice-output">
+    <p id="voiceText"></p>
+    <p id="voiceResult"></p>
+  </div>
+</section>
+
+<section class="upload-section">
+
+  <h2>AI Upload Emotion Analyzer</h2>
+  <p class="subtitle">Upload Image, Audio or Text to detect emotions instantly</p>
+
+  <div class="upload-grid">
+
+    
+    <div class="upload-card">
+      <h3>📸 Image Upload</h3>
+      <input type="file" id="imageUpload" accept="image/*">
+      <img id="imagePreview" />
+    </div>
+
+    
+    <div class="upload-card">
+      <h3>🎤 Audio Upload</h3>
+      <input type="file" id="audioUpload" accept="audio/*">
+      <p id="audioName"></p>
+    </div>
+
+    
+    <div class="upload-card">
+      <h3>💬 Text Upload</h3>
+
+      <input type="file" id="textFileUpload" accept=".txt">
+      <textarea id="uploadText" placeholder="Or type your text here..."></textarea>
+    </div>
+
+  </div>
+
+
+  <div class="result-box">
+    <h3>🧠 AI Result</h3>
+    <p id="uploadResult"></p>
+  </div>
+
+</section>
+
+<section class="final-section">
+  <h2>Final Emotion (AI Decision)</h2>
+
+  <p id="finalEmotion"></p>
+  <p id="finalDetails"></p>
+
+  <button id="checkFinalBtn">Check Final Emotion</button>
+</section>
+
+
+
+<section class="analytics-section">
+  <h2 style="text-align:center;">Emotion Analytics</h2>
+  <canvas id="emotionChart" width="400" height="200"></canvas>
+</section>
+
+
+
+<footer>
+  <p>
+    © 2026 Multi Model Emotion Detection | AI & ML Based System |
+    Presented by - Shubham , Vidyaanshi , Vishvajeet , Gauri , Aditi , Ankur
+  </p>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
